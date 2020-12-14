@@ -35,7 +35,11 @@ df = user_input_features()
 
 # Displays the user input features
 st.subheader('Isi datamu dengan menggunakan slider disamping')
+
+
 st.write(df)
+
+st.write("_______")
 
 # Reads in saved classification model
 load_clf = pickle.load(open('diabetes_clf.pkl', 'rb'))
