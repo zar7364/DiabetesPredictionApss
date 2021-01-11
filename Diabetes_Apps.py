@@ -18,13 +18,13 @@ st.sidebar.header('Masukan datamu!')
 def user_input_features():
     Glucose = st.sidebar.slider('Kadar Glukosa', 0.00,199.00,121.18)
     BloodPressure = st.sidebar.slider('Tekanan Darah', 0.00,122.00,69.14)
-    #SkinThickness = st.sidebar.slider('Ketebalan Kulit', 0.00,110.00,20.93)
+    SkinThickness = st.sidebar.slider('Ketebalan Kulit', 0.00,110.00,20.93)
     Insulin = st.sidebar.slider('Kadar Insulin', 0.00,744.00,80.25)
     BMI=st.sidebar.slider('BMI', 0.00,80.60,32.19)
     Age=st.sidebar.slider('Usia',21.00,81.00,33.09)
     data = {'Kadar Glukosa': Glucose,
             'Tekanan Darah': BloodPressure,
-            #'Ketebalan Kulit': SkinThickness,
+            'Ketebalan Kulit': SkinThickness,
             'Kadar Insulin': Insulin,
             'BMI':BMI,
             'Usia':Age}
